@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Function Example In JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Function Example In JS</h1>
+    <p>This example calls a function to convert from Fahrenheit to Celsius</p>
+    <p id="demo"></p>
+
+    <p>This example calls a function for calculating mathematical operations</p>
+    <p id="cal"></p>
+    <script>
+      var x = 2 * 3 + 5;
+      var y = 3 * 4;
+
+      var result = myFunction(2, 3);
+      console.log(result);
+
+      function myFunction(x, y) {
+        var a = x * y;
+        var b = x + y;
+        return a + b;
+      }
+      document.getElementById("cal").innerHTML = myFunction(3, 4);
+
+      function toCelsius(fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+      }
+      document.getElementById("demo").innerHTML = toCelsius(77);
+    </script>
+  </body>
+</html>
